@@ -3,10 +3,10 @@ const mysql = require('mysql2');
 function connectToDatabase() {
   // create a new MySQL connection
   const connection = mysql.createConnection({
-    host: 'mysql-e3a7385-mu8494759-744f.a.aivencloud.com',
+    host: '',
     port: 27674,
     user: 'avnadmin',
-    password: 'AVNS_0txvLOBA7WGArsaXV7U',
+    password: '',
     database: 'BPE'
   });
 
