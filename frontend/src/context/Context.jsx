@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 const Context = createContext();
 
 const Provider = (props) => {
-  const host = "http://localhost:3000";
+  const host = "https://statistics-api-seven.vercel.app";
 
   return (
     <Context.Provider value={{ host }}>
