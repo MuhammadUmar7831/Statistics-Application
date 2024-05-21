@@ -21,7 +21,7 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import Tooltip from "@mui/material/Tooltip";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Order from "./Order/Order";
 import Product from "./Product/Product";
 import Supplier from "./Supplier/Supplier";
@@ -158,26 +158,26 @@ export default function Dashboard() {
                     }}
                   >
                     {index == 0 && (
-                      <a href="/">
+                      <Link to="/">
                         {" "}
                         <Tooltip title="Statistics"><BarChartIcon />{" "}</Tooltip>
                         
-                      </a>
+                      </Link>
                     )}
                     {index == 1 && (
-                      <a href="/order">
+                      <Link to="/order">
                         <Tooltip title="Orders"><ProductionQuantityLimitsIcon />{" "}</Tooltip>
-                      </a>
+                      </Link>
                     )}
                     {index == 2 && (
-                      <a href="/supplier">
+                      <Link to="/supplier">
                         <Tooltip title="Supplier"><LocalShippingIcon />{" "}</Tooltip>
-                      </a>
+                      </Link>
                     )}
                     {index == 3 && (
-                      <a href="/product">
+                      <Link to="/product">
                         <Tooltip title="Product"><LocalMallIcon />{" "}</Tooltip>
-                      </a>
+                      </Link>
                     )}
                   </ListItemIcon>
                   <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
